@@ -31,10 +31,22 @@ section.show {
     cursor: pointer;
 }
 
+html {
+    min-height: 100%;
+    background-color: #061426;
+}
+
 body {
-    background-image: url('../images/Background.png');
+    min-height: 100vh;
+    margin: 0;
+
+    background-image: url('../images/Cinematic Pharmacy Emblem Backdrop.png');
     background-size: cover;
-    background-attachment:fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #061426;
 }
 .body-overlay {
     position: fixed;
@@ -67,7 +79,7 @@ body {
 .portf:hover{
     color: rgb(100, 162, 255) !important;
 }
-.about .container,.Skills .container .about-items .about-item,.Projects .card,.Certificates .card,.Contact .container{
+.about .container,.Skills .container .about-items .about-item,.Projects .card,.Certificates .card,.Certificates .card2,.Contact .container,.Moments .card{
     background-color: rgba(255, 255, 255, 0.137);
     opacity: 0.8;
     transition: all 0.7s;
@@ -81,7 +93,7 @@ body {
     color: black !important;
         
 }
-.Certificates .card:hover{
+.Certificates .card:hover,.Moments .card:hover{
         opacity: 1;
         transform: scale(1.35,1.35);
         z-index: 9999;
@@ -89,6 +101,13 @@ body {
         background-color: rgba(240, 255, 255, 0.954);
         
 
+}
+.Certificates .card2:hover{
+        opacity: 1;
+        transform: scale(1.20,1.20);
+        z-index: 9999;
+        box-shadow: 0 0 60px rgb(100, 162, 255) !important;
+        background-color: rgba(240, 255, 255, 0.954);
 }
 @media (max-width: 768px) {
     .Certificates .card:hover {
@@ -173,7 +192,7 @@ a{
         border-color:rgba(207, 207, 255, 0.9)!important ;
     }
     .myphoto{
-        width: 80%;
+        width: 109%;
         
         object-fit: cover;
         
@@ -282,6 +301,34 @@ input:hover,textarea:hover{
     background-color: rgb(100, 162, 255) !important;
     border-color: rgba(207, 207, 255, 0.9) !important;
     color: white !important;
+}
+/* Portfolio Footer */
+.portfolio-footer {
+    position: relative;
+    padding: 25px 15px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(100, 162, 255, 0.3);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+}
+
+.portfolio-footer a {
+    color: rgb(100, 162, 255);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.portfolio-footer a:hover {
+    color: white;
+    text-shadow: 0 0 12px rgb(100, 162, 255);
+}
+
+.portfolio-footer .fa-heart {
+    color: rgb(100, 162, 255);
+    font-size: 12px;
 }
 
 @keyframes blink {

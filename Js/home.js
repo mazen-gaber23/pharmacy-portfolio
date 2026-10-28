@@ -1,5 +1,5 @@
 const typingElement = document.getElementById('typing');
-const text = "Front-End Developer | Angular"; 
+const text = "Clinical Pharmacist"; 
 let index = 0;
 
 function type() {
@@ -66,15 +66,15 @@ document.addEventListener("DOMContentLoaded", navActiveIfScroll);
   const observerOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.15 // يظهر لما يدخل بنسبة 15%
+    threshold: 0.01
   };
 
   const observerCallback = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("show"); // يظهر لما تقرب منه
+        entry.target.classList.add("show");
       } else {
-        entry.target.classList.remove("show"); // يختفي أول ما تبعد عنه أو تطلع لفوق
+        entry.target.classList.remove("show");
       }
     });
   };
